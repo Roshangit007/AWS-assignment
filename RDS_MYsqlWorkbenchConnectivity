@@ -1,0 +1,38 @@
+
+
+-------------------------To create RDS---------------------------
+step  1---go to RDS service----> standard create------Engine options---> MySQL--------version --MySQL 8.0.20-----Template Free Tier
+
+step 2-----> in Setting give database name as Radical,----credential settings---default name "admin ", password :-----
+
+step  3 -----DB instance class --- Burstable classes (includes t classes)--------
+
+step 4------Storage General Purpose(SSD)------allocated storage 20GB----
+step 5------choose defaults fields and make sure Public access should be set AS YES(by defaults it NO) and give database name AS Radical  and CREATE DATABASE
+
+Follow the steps below to connect MySQL Workbench to your Amazon RDS DB instance:
+
+step1-   Download and install MySQL Workbench.
+step2-   Open MySQL Workbench, and choose the ⊕ sign beside MySQL Connections to set up a new connection.(or select database option and choose connect to database option)
+step3-   In the Setup New Connection dialog box, enter a suitable name for your connection.
+In the Parameters section, enter the following details:
+
+Host name: Enter the RDS endpoint
+
+Port: Enter Port the number(3306)
+Username: Enter the master user(admin)
+password:(which u set at the time of datbase creation)
+
+
+
+
+
+SQL QUERIES its available on Internet(https://www.w3schools.com/sql/sql_create_db.asp)
+create table Student (StudID int, Firstname varchar(255), Lastname varchar(255), Address varchar(255), city varchar(255), phone_no int);
+
+INSERT INTO Student (StudID , Firstname, Lastname ,Address ,city ,phone_no ) VALUES (1,"ROSHAN", "BANTE", "Karvenagar", "Pune", 9766012136),(2, "Pradip", "amg","aundh","Pune", 91111111);
+
+
+
+
+
